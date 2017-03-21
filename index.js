@@ -5,6 +5,11 @@ var through = require('through2'),
     parser = require('./parser');
 
 module.exports = function(options) {
+
+    options = {
+        debug: true
+    };
+
     return through.obj(function(file, enc, cb) {
         if (file.isNull()) {
             cb(null, file);

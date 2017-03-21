@@ -1,5 +1,7 @@
 "use strict";
 
+var gutil = require('gulp-util');
+
 module.exports = function(src, options) {
 
     var Twig = require('twig'),
@@ -11,10 +13,6 @@ module.exports = function(src, options) {
             echo: false,
             tabs: 0
         };
-
-    options = {
-        debug: true
-    }
 
     function createToken(input, type, value) {
         input.push({
@@ -131,7 +129,7 @@ module.exports = function(src, options) {
                 }
                 break;
             default:
-              if(options.debug) console.log(token);
+              if(options.debug) gutil.log(token);
         }
 
         return output;
@@ -182,7 +180,7 @@ module.exports = function(src, options) {
                     }
                     break;
                 default:
-                    if(options.debug) console.log(item, flags);
+                    if(options.debug) gutil.log(item, flags);
             }
 
             source_code += item.value;
