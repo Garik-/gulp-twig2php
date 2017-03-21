@@ -2,6 +2,8 @@
     "name": "gulp-twig2php",
     "version": "1.0.0",
     "description": "Compiles Twig Templates to native PHP using Twig.js",
+    "homepage": "https://github.com/Garik-/gulp-twig2php",
+    "bugs": "https://github.com/Garik-/gulp-twig2php/issues",
     "main": "index.js",
     "dependencies": {
         "twig": "^1.10.4",
@@ -30,7 +32,7 @@
     "author": {
         "name": "Gar|k",
         "email": "garik.djan@gmail.com",
-        "url": "https://github.com/Garik-/gulp-twig2php"
+        "url": "https://github.com/Garik-"
     },
     "license": "MIT",
     "repository": {
