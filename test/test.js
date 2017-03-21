@@ -5,11 +5,11 @@ var test = require('ava');
 var vinylFile = require('vinyl-file');
 var parser = require('../');
 
-test('parse file', function (t) {
+test('parse file input.twig', function (t) {
 	t.plan(1);
 
 	var file = vinylFile.readSync(path.join(__dirname, 'fixtures/input.twig'));
-	var stream = parser();
+	var stream = parser({ debug:true });
 
 	file.extract = true;
 

@@ -6,9 +6,11 @@ var through = require('through2'),
 
 module.exports = function(options) {
 
-    options = {
-        debug: true
+    var defaults = {
+        debug: false
     };
+    
+    options = Object.assign({}, defaults, options);
 
     return through.obj(function(file, enc, cb) {
         if (file.isNull()) {
