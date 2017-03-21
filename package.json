@@ -1,28 +1,40 @@
 {
-  "name": "gulp-twig2php",
-  "version": "1.0.0",
-  "description": "Compiles Twig Templates to native PHP using Twig.js",
-  "main": "index.js",
-  "dependencies": {
-    "twig": "^1.10.4",
-    "gulp-util": "^3.0.8",
-    "through2": "^0.6.1"
-  },
-  "devDependencies": {
-    "ava": "^0.0.4",
-    "vinyl-file": "^1.1.0"
-  },
-  "scripts": {
-    "test": "node test/test.js"
-  },
-  "author": {
-    "name": "Gar|k",
-    "email": "garik.djan@gmail.com",
-    "url": "c0dedgarik.blogspot.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Garik-/gulp-twig2php"
-  }
+    "name": "gulp-twig2php",
+    "version": "1.0.0",
+    "description": "Compiles Twig Templates to native PHP using Twig.js",
+    "main": "index.js",
+    "dependencies": {
+        "twig": "^1.10.4",
+        "gulp-util": "^3.0.8",
+        "through2": "^0.6.1"
+    },
+    "devDependencies": {
+        "ava": "^0.0.4",
+        "vinyl-file": "^1.1.0"
+    },
+    "scripts": {
+        "test": "node test/test.js"
+    },
+    "files": [
+        "index.js",
+        "parser.js"
+    ],
+    "keywords": [
+        "gulp",
+        "php",
+        "twig",
+        "template",
+        "tiwgplugin",
+        "gulpplugin"
+    ],
+    "author": {
+        "name": "Gar|k",
+        "email": "garik.djan@gmail.com",
+        "url": "https://github.com/Garik-/gulp-twig2php"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Garik-/gulp-twig2php"
+    }
 }
